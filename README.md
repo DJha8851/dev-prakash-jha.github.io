@@ -1,43 +1,42 @@
-# dev-prakash-jha.github.io
+# Dev Prakash Jha — Academic Research Website
 
-Academic website for Dev Prakash Jha — PhD Research Scholar, Department of Mathematics, IIST.
+Personal academic website for Dev Prakash Jha, PhD Research Scholar in the Department of Mathematics at the Indian Institute of Space Science and Technology (IIST), Thiruvananthapuram, India.
 
-## Structure
+## Website
+
+This repository is named `dev-prakash-jha.github.io` under the GitHub account `DJha8851`. Unless the repository is renamed to `DJha8851.github.io`, the expected project-site address is:
+
+`https://djha8851.github.io/dev-prakash-jha.github.io/`
+
+## Repository structure
+
+```text
+index.html
+css/
+  style.css
+  responsive.css
+js/
+  main.js
+images/
+  profile.jpg
+  gallery/
+assets/
+  cv.pdf
+  publications.bib
+README.md
 ```
-dev-prakash-jha.github.io/
-├── index.html
-├── css/
-│   ├── style.css        # main theme (layout, typography, components)
-│   └── responsive.css   # mobile / small-screen overrides
-├── js/
-│   └── main.js          # mobile nav toggle, scroll-spy, tab switching
-├── images/
-│   ├── profile.jpg
-│   └── gallery/         # empty — drop conference/talk photos here
-├── assets/
-│   ├── cv.pdf
-│   └── publications.bib
-└── README.md
-```
 
-## Publish on GitHub Pages
+## Publish with GitHub Pages
 
-1. Create a repo named exactly `dev-prakash-jha.github.io` under your GitHub account (this exact name gives you a root URL, `https://dev-prakash-jha.github.io`).
-2. Upload everything in this folder, **keeping the folder structure** (drag the whole unzipped folder's contents in via **Add file → Upload files**, or use git):
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial site"
-   git branch -M main
-   git remote add origin https://github.com/dev-prakash-jha/dev-prakash-jha.github.io.git
-   git push -u origin main
-   ```
-3. **Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch: main / (root) → Save.**
-4. Live in ~1 minute at `https://dev-prakash-jha.github.io`.
+1. Open **Settings → Pages** for this repository.
+2. Under **Build and deployment**, choose **Deploy from a branch**.
+3. Select branch `main` and folder `/(root)`, then save.
+4. Wait for the deployment to complete. The live address should be the project-site URL shown above.
 
-## Updating later
-- New publication → add a `<div class="pub">` block in `index.html` and a matching entry in `assets/publications.bib`.
-- New award/project → add a `<div class="achv-card">` / `<div class="proj">` block.
-- Conference photos → drop into `images/gallery/` and reference them from `index.html`.
+## Updating the site
 
-No build step — it's static HTML/CSS/JS, so any edit is live as soon as it's pushed.
+- Replace `assets/cv.pdf` when updating your CV.
+- Edit `index.html` to update biography, research interests, publications, and project descriptions.
+- Keep the `css`, `js`, `images`, and `assets` folder structure unchanged.
+- Update submission statuses when editorial decisions change. Do not describe a manuscript as under review after a decision has been issued.
+- The publication records in `assets/publications.bib` should be checked against official publisher pages before formal reuse.
