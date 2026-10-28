@@ -43,6 +43,7 @@
         <li><a href="#publications">Publications</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#cv">CV</a></li>
+        <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
         <li class="nav-cta-li"><a class="nav-cta" href="assets/cv.pdf" target="_blank" rel="noopener">Download CV</a></li>
       </ul>
@@ -114,7 +115,8 @@
       </div>
       <aside class="about-side reveal">
         <div class="portrait">
-          <img src="images/profile.jpg" alt="Portrait of Dev Prakash Jha" width="350" height="450">
+          <img src="images/profile.jpg" alt="Portrait of Dev Prakash Jha" width="350" height="450" onerror="this.style.display='none';this.parentNode.classList.add('noimg')">
+          <div class="portrait-mono" aria-hidden="true">DPJ</div>
           <div class="portrait-tag"><b>Dev Prakash Jha</b><span>Dept. of Mathematics · IIST</span></div>
         </div>
         <div class="facts">
@@ -399,10 +401,25 @@
   </div>
 </section>
 
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="kicker reveal"><span>06</span>Gallery</div>
+    <h2 class="title reveal">Conferences, workshops &amp; moments.</h2>
+    <!-- To add a photo: put the file in images/gallery/ and copy one <figure> below. -->
+    <div class="gallery" id="galleryGrid">
+      <!--
+      <figure><img src="images/gallery/photo1.jpg" alt="Short description" loading="lazy"><figcaption>RACP, ICTS Bengaluru, 2024</figcaption></figure>
+      -->
+    </div>
+    <p class="gallery-empty">Photos coming soon. Add images to <code>images/gallery/</code> and list them in <code>index.html</code>.</p>
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section id="contact">
   <div class="wrap">
-    <div class="kicker reveal"><span>06</span>Contact</div>
+    <div class="kicker reveal"><span>07</span>Contact</div>
     <div class="contact-grid">
       <div class="reveal">
         <h2 class="lead big">Working on controllability, delay systems or neural ODEs? <em>Let’s talk.</em></h2>

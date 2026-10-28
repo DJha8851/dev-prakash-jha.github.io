@@ -63,6 +63,20 @@
     });
   });
 
+  /* ---------- Gallery lightbox ---------- */
+  var grid = document.getElementById('galleryGrid');
+  if (grid) {
+    var lb = document.createElement('div'); lb.className = 'lightbox'; lb.innerHTML = '<img alt="">';
+    document.body.appendChild(lb);
+    grid.addEventListener('click', function (e) {
+      var img = e.target.closest('figure') && e.target.closest('figure').querySelector('img');
+      if (img) { lb.firstChild.src = img.src; lb.firstChild.alt = img.alt; lb.classList.add('open'); }
+    });
+    lb.addEventListener('click', function () { lb.classList.remove('open'); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') lb.classList.remove('open'); });
+    grid.querySelectorAll('img').forEach(function (im) { im.addEventListener('error', function () { im.closest('figure').remove(); }); });
+  }
+
   /* ---------- helpers ---------- */
   function fit(canvas) {
     var dpr = Math.min(window.devicePixelRatio || 1, 2);
