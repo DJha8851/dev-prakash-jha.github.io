@@ -1,6 +1,6 @@
 # Dev Prakash Jha — Academic Research Website
 
-Personal academic website for Dev Prakash Jha, PhD Research Scholar in the Department of Mathematics at the Indian Institute of Space Science and Technology (IIST), Thiruvananthapuram, India.
+Personal academic website (control theory × neural dynamical systems theme) for Dev Prakash Jha, PhD Research Scholar in the Department of Mathematics at the Indian Institute of Space Science and Technology (IIST), Thiruvananthapuram, India.
 
 ## Website
 
@@ -40,3 +40,9 @@ README.md
 - Keep the `css`, `js`, `images`, and `assets` folder structure unchanged.
 - Update submission statuses when editorial decisions change. Do not describe a manuscript as under review after a decision has been issued.
 - The publication records in `assets/publications.bib` should be checked against official publisher pages before formal reuse.
+
+## Design notes
+
+- `js/main.js` draws two canvases: a faint feed-forward neural network with signal pulses (page background) and an interactive closed-loop phase portrait in the hero (`x' = (A − BK)(x − x*)`; the target follows the cursor).
+- Both animations pause/disable under `prefers-reduced-motion`.
+- Publications can be filtered by theme via `data-theme` (`pde`, `neural`, `frac`) on each `.pub` item.
