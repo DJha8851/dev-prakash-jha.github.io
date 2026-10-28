@@ -1,0 +1,28 @@
+/* ---------- RESPONSIVE ---------- */
+  @media (max-width:900px){
+    .shell{grid-template-columns:1fr;}
+    .sidenav{
+      position:fixed; top:0; left:0; right:0; height:auto;
+      flex-direction:row; align-items:center; justify-content:space-between;
+      padding:16px 20px; z-index:50; background:var(--ink);
+      border-right:none; border-bottom:1px solid var(--hairline);
+    }
+    .brand{margin-bottom:0;}
+    .navlist{
+      position:fixed; top:56px; left:0; right:0; bottom:0;
+      background:var(--ink); flex-direction:column; padding:20px;
+      transform:translateY(-110%); transition:transform .3s ease; z-index:49;
+      overflow-y:auto;
+    }
+    .navlist.open{transform:translateY(0);}
+    .side-foot, .side-cv{display:none;}
+    .mnav-toggle{
+      display:block; background:none; border:1px solid var(--hairline); color:var(--bone);
+      font-family:'IBM Plex Mono',monospace; font-size:11px; padding:7px 12px; border-radius:var(--radius);
+    }
+    main{padding-top:56px;}
+    section{padding:64px 24px;}
+    .about-grid, .contact-grid{grid-template-columns:1fr; gap:36px;}
+    .entry, .pub{grid-template-columns:1fr; gap:6px;}
+    footer{padding:24px;}
+  }
